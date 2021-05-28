@@ -1,7 +1,8 @@
 ---
 title: Git Cheatsheet
 date: 2021-05-27 11:10:28
-tags:
+tags: 
+  - git
 ---
 
 branch  
