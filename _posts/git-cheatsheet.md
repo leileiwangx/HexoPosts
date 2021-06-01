@@ -5,11 +5,6 @@ tags:
   - git
 ---
 
-branch  
-
-	git checkout <branch>
-	git checkout -b <branch>
-	git branch -a
 delete branch  
 
 	git branch -d <branch>
@@ -25,6 +20,8 @@ abandon local change:
     git fetch --all
     git reset --hard origin/master
     git pull
+
+init:
 
 
 Git History  
@@ -45,3 +42,4 @@ configuration:
 	system : etc/gitconfig            git config --system
 	user: ~/.gitconfig                git config --global
 	project: my_project/.git/config   git config
+
