@@ -8,10 +8,8 @@ tags:
 
 ### 16.Pow(x, n)
 
-```python
     def myPow(self, x: float, n: int) -> float:
-        #if x == 0.0: return 0.0
-        if math.isclose(x, 0.0): return 0.0
+        if x == 0.0: return 0.0
         res = 1
         if n < 0:
             x, n = 1 / x, -n
@@ -21,4 +19,3 @@ tags:
             x *= x
             n >>= 1 # n >> 1
         return res
-```
