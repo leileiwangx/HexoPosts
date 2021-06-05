@@ -30,4 +30,63 @@ lRUCache.get(1);    // return -1 (not found)
 lRUCache.get(3);    // return 3
 lRUCache.get(4);    // return 4
 
+```python
+class Node:
+    def __init__(self, key = None, value = None):
+        self.key = key
+        self.value = value
+        self.prev = None
+        self.next = None
+    
+class LRUCache:
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.size = 0
+        self.head = Node()
+        self.tail = Node()
+        self.head.next = self.tail
+        self.tail.prev = self.head
+        self.cache = dict()
 
+    def get(self, key):
+        if key in self.cache:
+            node = self.cache[key]
+            self.moveToHead(node)
+            return node.value
+        return -1
+
+    def put(self, key, value):
+        if key in self.cache:
+            node = self.cache[key]
+            node.value = value
+            self.moveToHead(node)
+        else:
+            node = Node(key, value)
+            self.cache[key] = node
+            self.addToHead(node)
+            self.size += 1
+            if self.size > self.capacity:
+                removed = self.removeTail()
+                self.cache.pop(removed.key)
+                self.size -= 1 #
+
+    def moveToHead(self, node):
+        self.removeNode(node)
+        self.addToHead(node)
+
+    def addToHead(self, node):
+        self.head.next.prev = node
+        node.next = self.head.next
+        self.head.next = node
+        node.prev = self.head
+
+    def removeNode(self, node):
+        node.prev.next = node.next
+        node.next.prev = node.prev
+        # return node
+
+    def removeTail(self):
+        node = self.tail.prev
+        self.removeNode(node)
+        return node #
+```

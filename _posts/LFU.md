@@ -41,3 +41,90 @@ lfu.get(3);      // return 3
                  // cache=[3,4], cnt(4)=1, cnt(3)=3
 lfu.get(4);      // return 4
                  // cache=[3,4], cnt(4)=2, cnt(3)=3
+
+
+```python
+class Node:
+    def __init__(self, key = None, val = None):
+        self.key = key
+        self.val = val
+        self.freq = 1
+        self.prev = None
+        self.next = None
+
+class DLinkedList:
+    def __init__(self):
+        self.head = Node()
+        self.tail = Node()
+        self.head.next = self.tail
+        self.tail.prev = self.head
+        self.size = 0
+
+    def addToHead(self, node):
+        self.head.next.prev = node
+        node.next= self.head.next
+        node.prev = self.head
+        self.head.next = node
+        self.size += 1
+
+    def removeTail(self):
+        node = self.tail.prev
+        self.removeNode(node)
+        return node
+
+    def removeNode(self, node):
+        node.next.prev = node.prev
+        node.prev.next = node.next
+        self.size -= 1
+
+
+class LFUCache:
+    def __init__(self, capacity):
+        self.key_node = dict()
+        self.freq_DLinkedList = dict()
+        self.capacity = capacity
+        self.minFreq = 0 #
+
+    def get(self, key):
+        if key in self.key_node:
+            node = self.key_node[key]
+            self.increase_key_freq(key)
+            return node.val
+        return -1
+
+    def put(self, key, val):
+        if not self.capacity:
+            return
+        if key in self.key_node:
+            node = self.key_node[key]
+            node.val = val
+            self.increase_key_freq(key)
+        else:
+            # remove first
+            if len(self.key_node) >= self.capacity:  # >
+                # self.freq_DLinkedList[self.minFreq].removeTail()
+                # self.key_node.pop(node.key) #
+                self.remove_Min_freq()
+            node = Node(key, val)
+            if node.freq not in self.freq_DLinkedList:
+                self.freq_DLinkedList[node.freq] = DLinkedList()
+            self.key_node[key] = node
+            self.freq_DLinkedList[node.freq].addToHead(node)
+            self.minFreq = 1
+
+    def increase_key_freq(self, key):
+        node = self.key_node[key]
+        freq = node.freq
+        self.freq_DLinkedList[freq].removeNode(node)
+        node.freq += 1
+        if node.freq not in self.freq_DLinkedList:
+            self.freq_DLinkedList[node.freq] = DLinkedList()
+        self.freq_DLinkedList[node.freq].addToHead(node)
+        # self.key_node[key] = node
+        if self.minFreq == freq and self.freq_DLinkedList[freq].size == 0:
+            self.minFreq +=1
+    
+    def remove_Min_freq(self):
+        node = self.freq_DLinkedList[self.minFreq].removeTail()
+        self.key_node.pop(node.key)
+```
