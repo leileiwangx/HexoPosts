@@ -78,6 +78,5 @@ In some problems, the size of the sliding window is not fixed. We have to expand
 [1004. Max Consecutive Ones III](https://leetcode-cn.com/problems/max-consecutive-ones-iii/)
 [567. Permutation in String](https://leetcode-cn.com/problems/permutation-in-string/)
 [76. Minimum Window Substring](https://leetcode-cn.com/problems/minimum-window-substring/)
-[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
-[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
-[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
+[438.Find All Anagrams in a String](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/)
+[30. Substring with Concatenation of All Words](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/)
