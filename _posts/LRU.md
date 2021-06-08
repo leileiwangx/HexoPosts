@@ -37,7 +37,7 @@ class Node:
         self.value = value
         self.prev = None
         self.next = None
-    
+
 class LRUCache:
     def __init__(self, capacity):
         self.capacity = capacity
