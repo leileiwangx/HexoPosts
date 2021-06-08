@@ -9,7 +9,7 @@ tags:
         for i in range(1, len(preSum)):
             preSum[i] = preSum[i-1] + preSum[i]
 
-### 523. Continuous Subarray Sum
+## Continuous Subarray Sum
 Given an integer array nums and an integer k, return true if nums has a continuous subarray of size at least two whose elements sum up to a multiple of k, or false otherwise.
 An integer x is a multiple of k if there exists an integer n such that x = n * k. 0 is always a multiple of k.
 nums = [23,2,4,6,7], k = 6 True
@@ -54,6 +54,11 @@ Extend : the number of continuous subarray sum:
             if nex  in modDict:
                 res += modDict[nex]
         return res
+
+
+
+## LeetCode
+[523. Continuous Subarray Sum](https://leetcode-cn.com/problems/continuous-subarray-sum/)
 
 
 
