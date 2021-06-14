@@ -80,3 +80,6 @@ In some problems, the size of the sliding window is not fixed. We have to expand
 [76. Minimum Window Substring](https://leetcode-cn.com/problems/minimum-window-substring/)
 [438.Find All Anagrams in a String](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/)
 [30. Substring with Concatenation of All Words](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/)
+[992. Subarrays with K Different Integers](https://leetcode-cn.com/problems/subarrays-with-k-different-integers/)
+[1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
+[643. Maximum Average Subarray I](https://leetcode-cn.com/problems/maximum-average-subarray-i/)
