@@ -21,15 +21,18 @@ class UnionFind:
     def find(self, x):
         # 查找根节点，即当前元素所属的集合
         r = x
-        if r != self.parent[r]:
+        while r != self.parent[r]:
             r = self.parent[r]
         return r
+        # if x != self.parent[x]:
+        #     self.parent[x] = self.find(self.parent[x])
+        # return self.parent[x]
 
-    def union(x, y, size):
+    def union(x, y):
         x_root = self.find(x)
         y_root = self.find(y)
         if x_root != y_root:
-            if size[x_root] > size[y_root]:
+            if self.size[x_root] > self.size[y_root]:
                 self.parent[y_root] = x_root
                 self.size[x_root] += self.size[y_root]
             else:
@@ -91,3 +94,7 @@ class Solution(object):
 a = Solution()
 print(a.findCircleNum([[1, 1, 0], [1, 1, 0], [0, 0, 1]]))
 ```
+
+## LeetCode
+[778. Swim in Rising Water](https://leetcode-cn.com/problems/swim-in-rising-water/)
+[200. Number of Islands](https://leetcode-cn.com/problems/number-of-islands/)
