@@ -58,7 +58,7 @@ class HeapSort:
             if largest != i:
                 self.nums[i], self.nums[largest] = self.nums[largest], self.nums[i]
             else:  ##
-                break ##  
+                break ##
             i = largest
             left = 2 * i + 1
             right = 2 * i + 2

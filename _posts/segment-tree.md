@@ -21,7 +21,7 @@ class NumArray:
             j += 1
         for i in range(n - 1, 0, -1): # 2n - 1个节点 所以 i 只用取到1
             self.tree[i] = self.tree[i * 2] + self.tree[i * 2 + 1]
-    
+
     def  update(self, i, val):
         n = len(self.tree) // 2
         i += n

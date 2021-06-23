@@ -15,7 +15,7 @@ class QuickSort:
         i = lo
         for j in range(lo, hi):
             if self.nums[j] < pivot:
-                # i停留在 大于pivot的数， 等到j找到下一个小于pivot的数交换
+                # i停留在大于pivot的数， 等到j找到下一个小于pivot的数交换
                 self.nums[i], self.nums[j] = self.nums[j], self.nums[i]
                 i += 1
         self.nums[i], self.nums[hi] = self.nums[hi], self.nums[i]
