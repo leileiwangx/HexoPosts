@@ -2,8 +2,40 @@
 title: heap sort
 date: 2021-06-08 14:23:01
 tags:
-  - sort algorithm
+  - CLRS
 ---
+
+```python
+def heap_sort(nums):
+    def heapify(n, i):
+        # find largest among root and children
+        while True:
+            largest = i
+            left = 2 * i + 1
+            right = 2 * i + 2
+            if left < n and nums[i] < nums[left]:
+                largest = left
+            if right < n and nums[largest] < nums[right]:
+                largest = right
+            if largest == i:
+                break
+            nums[i], nums[largest] = nums[largest], nums[i]
+            i = largest
+
+    n = len(nums)
+    # build max heap (n)
+    for i in range(n // 2 - 1, -1, -1):
+        heapify(n, i)
+    # heap sort (nlogn)
+    for i in range(n-1, 0, -1):
+        nums[i], nums[0] = nums[0], nums[i]
+        heapify(i, 0)
+
+nums=[1,2,5,9,3,5,10,11,7]
+heap_sort(nums)
+print(nums)
+```
+
 
 
 ```python
@@ -58,7 +90,7 @@ class HeapSort:
             if largest != i:
                 self.nums[i], self.nums[largest] = self.nums[largest], self.nums[i]
             else:  ##
-                break ##
+                break ##  
             i = largest
             left = 2 * i + 1
             right = 2 * i + 2
@@ -81,7 +113,7 @@ class HeapSort:
         #     self.heapify(n, i)
         for i in range(n - 1, 0, -1):
             self.nums[0], self.nums[i] = self.nums[i], self.nums[0]
-            # self.heapify(n, i)
+            # self.heapify(n, i)  error 
             self.heapify(i, 0)
 
 
