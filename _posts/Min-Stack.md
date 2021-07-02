@@ -3,7 +3,6 @@ title: Min-Stack
 date: 2021-05-31 23:15:01
 tags:
   - leetcode
-  - 155
 ---
 
 
