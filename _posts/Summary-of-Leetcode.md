@@ -16,6 +16,30 @@ tags:
 [1774]
 [1775]
 
+## stack
 ### monotonic stack
 [1475]
 [503]
+
+
+## math
+### quick multi
+```python
+  def pow2(a, b):
+      res = 1
+      base = a
+      while b:
+          if b % 2: res = res * base % mod
+          base = base * base % mod
+          b = b // 2
+      return res
+```
+[50]
+[1922]
+
+
+### prefix hashtable :todo
+[1542]
+[325]
+[560]
+[1074]
