@@ -52,7 +52,7 @@ def quick_sort(nums):
         if lo >= hi:
             return
         idx = partition(lo, hi)
-        sort(lo, idx - 1)
+        sort(lo, idx - 1) ### idx - 1
         sort(idx + 1, hi)
 
     sort(0, len(nums) - 1)
