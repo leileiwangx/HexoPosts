@@ -209,7 +209,7 @@ None 不是一个保留关键字，只是 NoneType 的一个**实例**而已。
 ### 日期和时间
 Python 内置的 datetime 模块中，datetime 类型是用得最多的，它合并了保存在 date 和 time 中的信息：
 ```python
-from datetime import datetime, data, time
+from datetime import datetime, date, time
 dt = datetime(2011, 10, 29, 20, 30, 21)
 
 dt.day
@@ -281,7 +281,7 @@ range(0, 20, 2)
 
 >>> [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 ```
-range 所产生的蒸熟不包括末端值，常用于按索引对序列进行迭代：
+range 所产生的整数不包括末端值，常用于按索引对序列进行迭代：
 ```python
 seq = [1, 2, 3, 4]
 for i in range(len(seq)):
