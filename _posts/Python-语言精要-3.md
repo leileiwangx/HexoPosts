@@ -215,7 +215,7 @@ dict_iterator
 ```python
 def squares(n=10):
     print 'Generating squares from 1 to %d' % (n ** 2)
-    for i in xrange(1, n+1):
+    for i in range(1, n+1):
         yield i ** 2
 ```
 调用该生成器时，没有任何代码会被立即执行：
@@ -236,20 +236,20 @@ for x in gen:
 #### 生成器表达式
 生成器表达式（generator expression）是构造生成器的最简单方式。类似于列表、字典、集合推导式，创建方式为，把列表推导式两端的方括号改成圆括号：
 ```python
-gen = (x ** 2 for x in xrange(100))
+gen = (x ** 2 for x in range(100))
 
 # 与下面这个冗长的生成器，完全等价
 def make_gen():
-    for x in xrange(100):
+    for x in range(100):
         yield x ** 2
 gen = make_gen()
 ```
 生成器表达式可用于任何接受生成器的 Python 函数：
 ```python
-sum(x ** 2 for x in xrange(100))
+sum(x ** 2 for x in range(100))
 >>> 328350
 
-dict((i, i ** 2) for i in xrange(5))
+dict((i, i ** 2) for i in range(5))
 >>> {0:0, 1:1, 2:4, 3:9, 4:16}
 ```
 #### itertools 模块
