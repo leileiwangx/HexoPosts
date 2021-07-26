@@ -2,6 +2,7 @@
 title: System Design Basics
 date: 2021-07-26 14:45:20
 tags:
+  - SystemDesign
 ---
 Whenever we are designing a large system, we need to consider a few things:
 1. What are the different architectural pieces that can be used?
