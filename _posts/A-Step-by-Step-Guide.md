@@ -1,6 +1,6 @@
 ---
 title: A Step by Step Guide
-date: 2021-06-19 17:44:35
+date: 2021-06-19 10:44:35
 tags:
   - SystemDesign
 ---
