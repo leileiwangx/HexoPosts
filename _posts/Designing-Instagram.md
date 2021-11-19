@@ -164,4 +164,4 @@ Our service would need a massive-scale photo delivery system to serve globally d
 We can introduce a cache for metadata servers to cache hot database rows. We can use Memcache to cache the data, and Application Servers before hitting the database, can quickly check if the cache has desired rows. Least Recently Used (LRU) can be a reasonable cache eviction policy for our system. Under this policy, we discard the least recently viewed row first.
 
 **How can we build a more intelligent cache**? If we go with the eighty-twenty rule, i.e., 20% of daily read volume for photos is generating 80% of the traffic, which means that certain photos are so popular that most people read them. This dictates that we can try caching 20% of the daily read volume of photos and metadata.
----
+
