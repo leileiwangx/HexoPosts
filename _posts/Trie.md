@@ -6,38 +6,32 @@ tags:
 ---
 
 ```python
-from collections import defaultdict
-# TreeNode can search children and determine whether it's end or not
-class TrieNode:
-    def __init__(self):
-        self.children = defaultdict(TrieNode)
-        self.is_word = False
-
 class Trie:
-    def __init__(self):
-        self.root = TrieNode()
-
+    def __init__(self) -> None:
+        self.root = {}
+    
     def insert(self, word):
-        node = self.root
-        for w in word:
-            # use defaultdict without declaring value
-            node = node.children[w]
-        node.is_word = True
+        cur = self.root
+        for c in word:
+            if c not in cur:
+                cur[c] = {}
+            cur = cur[c]
+        cur['#'] = True
 
     def search(self, word):
-        node = self.root
-        for w in word:
-            node = node.children.get(w)
-            if not node:
+        cur = self.root
+        for c in word:
+            if c not in cur:
                 return False
-        return node.is_word
+            cur = cur[c]
+        # return cur['#']
+        return True if cur and '#' in cur else False
 
-    def startsWith(self, prefix):
-        node = self.root
-        for w in prefix:
-            node = node.children.get(w)
-            if not node:
+    def startWith(self, prefix):
+        cur = self.root
+        for c in prefix:
+            if c not in cur:
                 return False
-        # search prefix/word is different
-        return True
+            cur = cur[c]
+        return True   
 ```

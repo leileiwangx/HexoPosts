@@ -7,7 +7,7 @@ tags:
 
 
 ```python
-# 第一个大于等于target的indx
+# 第一个大于等于target的index
 def bisect_left(nums, target):
     lo, hi = 0, len(nums) ## hi = len(nums)
     while lo < hi:
@@ -17,14 +17,9 @@ def bisect_left(nums, target):
         else:
             lo = mi + 1
     return lo                
-
-nums=[7]
-print(bisect_left(nums, 8))
-print(bisect_left(nums, 7))
 ```
 
 ```python
-import bisect
 def bisect_right(nums, target):
     lo, hi = 0, len(nums) ## hi = len(nums)
     while lo < hi:
@@ -34,17 +29,6 @@ def bisect_right(nums, target):
         else:
             lo = mi + 1
     return lo                
-
-nums=[7,7,7,7,8,8,8,8,9]
-print(bisect_right(nums, 8))
-print(bisect_right(nums, 7))
-print(bisect_right(nums, 10))
-
-print(bisect.bisect_right(nums, 8))
-print(bisect.bisect_right(nums, 7))
-print(bisect.bisect_right(nums, 10))
-
-8 4 9
 ```
 
 ```python
