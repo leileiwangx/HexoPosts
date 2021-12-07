@@ -26,8 +26,4 @@ def quick_sort(nums):
         sort(idx + 1, hi)
 
     sort(0, len(nums) - 1)
-
-nums=[1,2,5,9,3,5,10,11,7]
-quick_sort(nums)
-print(nums)
 ```
