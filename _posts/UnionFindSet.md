@@ -91,8 +91,6 @@ class Solution(object):
 
         return len(ans)
 
-a = Solution()
-print(a.findCircleNum([[1, 1, 0], [1, 1, 0], [0, 0, 1]]))
 ```
 
 ## LeetCode
