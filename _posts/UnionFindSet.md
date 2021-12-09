@@ -5,43 +5,6 @@ tags:
   - UnionFind
 ---
 
-
-```python
-from collections import defaultdict
-
-class UnionFind:
-    def __init__(self, n, nums):
-        self.nums = nums
-        self.parent = defaultdict(int)
-        self.size = defaultdict(int)
-        for i in range(len(self.nums)):
-            self.parent[i] = i
-            self.size[i] = 1
-
-    def find(self, x):
-        # 查找根节点，即当前元素所属的集合
-        r = x
-        while r != self.parent[r]:
-            r = self.parent[r]
-        return r
-        # if x != self.parent[x]:
-        #     self.parent[x] = self.find(self.parent[x])
-        # return self.parent[x]
-
-    def union(x, y):
-        x_root = self.find(x)
-        y_root = self.find(y)
-        if x_root != y_root:
-            if self.size[x_root] > self.size[y_root]:
-                self.parent[y_root] = x_root
-                self.size[x_root] += self.size[y_root]
-            else:
-                self.parent[x_root] = y_root
-                self.size[y_root] += self.size[x_root]
-```
-
-
-
 ```python
 from collections import defaultdict
 
