@@ -9,7 +9,6 @@ tags:
 from collections import defaultdict
 
 
-# 查根
 def find(x, parent):
     r = x
     while r != parent[r]:
