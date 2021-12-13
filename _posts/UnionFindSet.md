@@ -19,7 +19,6 @@ def find(x, parent):
 def union(x, y, parent,size):
     x_root = find(x, parent)
     y_root = find(y, parent)
-    # 将x作为根节点
     if x_root != y_root:
         if size[x_root] > size[y_root]:
             parent[y_root] = x_root
@@ -31,10 +30,6 @@ def union(x, y, parent,size):
 
 class Solution(object):
     def findCircleNum(self, M):
-        """
-        :type M: List[List[int]]
-        :rtype: int
-        """
         parent = defaultdict(int)
         size = defaultdict(int)
         ans = set()
