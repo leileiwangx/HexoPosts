@@ -47,7 +47,6 @@ class Solution(object):
             ans.add(find(i, parent))
 
         return len(ans)
-
 ```
 
 ## LeetCode
