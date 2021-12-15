@@ -8,13 +8,11 @@ tags:
 ```python
 from collections import defaultdict
 
-
 def find(x, parent):
     r = x
     while r != parent[r]:
         r = parent[r]
     return r
-
 
 def union(x, y, parent,size):
     x_root = find(x, parent)
@@ -26,7 +24,6 @@ def union(x, y, parent,size):
         else:
             parent[x_root] = y_root
             size[y_root] += size[x_root]
-
 
 class Solution(object):
     def findCircleNum(self, M):
