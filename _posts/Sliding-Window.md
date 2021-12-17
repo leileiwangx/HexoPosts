@@ -59,7 +59,6 @@ def find_averages_of_subarrays(k, arr):
     window_sum, start = 0.0, 0
     for end in range(len(arr)):
         window_sum += arr[end]
-        # shrink
         if end >= k - 1:
             result.append(window_sum / k)
             window_sum -= arr[start]
