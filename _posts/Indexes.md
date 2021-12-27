@@ -3,6 +3,7 @@ title: Indexes
 date: 2021-07-27 23:22:10
 tags:
   - SystemDesign
+
 ---
 Indexes are well known when it comes to databases. Sooner or later there comes a time when database performance is no longer satisfactory. One of the very first things you should turn to when that happens is database indexing.
 
