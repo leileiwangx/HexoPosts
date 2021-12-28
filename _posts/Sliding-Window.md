@@ -4,7 +4,7 @@ date: 2021-06-06 20:02:28
 tags:
   - Sliding Window
 ---
-
+ 
 In many problems dealing with an array (or a LinkedList), we are asked to find or calculate something among all the contiguous subarrays (or sublists) of a given size. For example, take a look at this problem:
 > Given an array, find the average of all contiguous subarrays of size "K" in it.
 
@@ -38,6 +38,7 @@ def find_averages_of_subarrays(k, arr):
             result.append(element_sum / k)
     return result
 ```
+
 
 **Time Complexity**: Since for every element of the input array, we are calculating the sum of its next "K" elements, the time complexity of the above algorithm will be O(N\*K) where "N" is the number of elements in the input array.
 
