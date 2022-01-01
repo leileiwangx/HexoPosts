@@ -43,6 +43,7 @@ class Solution(object):
         for i in parent:
             ans.add(find(i, parent))
         return len(ans)
+        
 ```
 
 ## LeetCode
