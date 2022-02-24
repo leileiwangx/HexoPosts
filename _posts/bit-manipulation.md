@@ -6,7 +6,6 @@ tags:
 ---
 
 ## Tips:
-
 remove rightest 1:
     n = n & (n - 1)
     n -= (~ n + 1) & n
