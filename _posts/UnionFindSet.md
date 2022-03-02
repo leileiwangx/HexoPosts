@@ -24,7 +24,7 @@ def union(x, y, parent,size):
         else:
             parent[x_root] = y_root
             size[y_root] += size[x_root]
-            
+
 
 class Solution(object):
     def findCircleNum(self, M):
@@ -45,6 +45,7 @@ class Solution(object):
             ans.add(find(i, parent))
         return len(ans)
 ```
+
 
 
 ## LeetCode
