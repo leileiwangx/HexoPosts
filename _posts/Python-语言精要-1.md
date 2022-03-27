@@ -298,4 +298,5 @@ x = 5
 'Non-negative' if x >= 0 else 'Negative'
 
 >>> 'Non-negative'
+
 ```
