@@ -59,6 +59,7 @@ class HeapSort:
         for i in range(n-1, 0, -1):
             self.nums[i], self.nums[0] = self.nums[0], self.nums[i]
             self.heapify(i, 0)
+            
 ```
 
 > 非递归实现 空间复杂度 o(1)
@@ -102,6 +103,5 @@ class HeapSort:
         #     self.heapify(n, i)
         for i in range(n - 1, 0, -1):
             self.nums[0], self.nums[i] = self.nums[i], self.nums[0]
-            # self.heapify(n, i)  error 
             self.heapify(i, 0)
 ```
