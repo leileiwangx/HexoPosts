@@ -1,5 +1,5 @@
 ---
-title: Python 语言精要-1
+title: Python Notes-1
 date: 2021-07-25 15:11:35
 tags:
   - python
