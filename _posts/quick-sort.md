@@ -6,8 +6,11 @@ tags:
 ---
 
 ```python
+from random import randint
 def quick_sort(nums):
     def partition(lo, hi):
+        rand_idx = randint(lo, hi)
+        nums[rand_idx], nums[hi] = nums[hi], nums[rand_idx]
         pivot = nums[hi]
         i = lo
         for j in range(lo, hi):
