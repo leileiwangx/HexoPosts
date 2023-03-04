@@ -63,7 +63,6 @@ def bisect_right(a, x, lo=0, hi=None):
 ```python
 def insort_left(a, x, lo=0, hi=None):
     """将x插入a（如果a中存在与x等值的元素，则插入到左侧）"""
-
     if lo < 0:
         raise ValueError('lo must be non-negative')
     if hi is None:
