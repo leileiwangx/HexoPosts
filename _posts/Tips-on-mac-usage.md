@@ -1,5 +1,5 @@
 ---
-title: Tips of mac usage
+title: Tips on mac usage
 date: 2023-03-04 22:27:34
 tags:
   - mac
