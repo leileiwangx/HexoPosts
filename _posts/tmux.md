@@ -64,4 +64,8 @@ setw -g mode-keys vi
 # log output to a text file on demand
 bind P pipe-pane -o "cat >>~/#W.log" \; display "Toggled logging to ~/#W.log"
 
+
 ```
+
+## Reference
+tmux 2: Productive Mouse-Free development
