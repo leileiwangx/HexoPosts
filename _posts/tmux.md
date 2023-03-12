@@ -71,5 +71,7 @@ bind P pipe-pane -o "cat >>~/#W.log" \; display "Toggled logging to ~/#W.log"
 
 
 
+
+
 ## Reference:
 tmux 2: Productive Mouse-Free development
