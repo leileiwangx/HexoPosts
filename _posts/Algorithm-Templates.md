@@ -92,7 +92,8 @@ def quick_sort(nums):
         sort(lo, idx - 1) ### idx - 1
         sort(idx + 1, hi)
 
-    sort(0, len(nums) - 1)
+    sort(0, len(nums) - 1) 
 
-    
+
+
 ```
