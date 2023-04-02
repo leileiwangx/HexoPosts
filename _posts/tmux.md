@@ -3,7 +3,6 @@ title: tmux
 date: 2023-03-06 23:49:50
 tags:
 ---
-
 # termial multiplexer
 
 ## custom config
