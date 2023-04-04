@@ -87,4 +87,5 @@ def insort_right(a, x, lo=0, hi=None):
         if x < a[mid]: hi = mid
         else: lo = mid+1
     a.insert(lo, x)
+    
 ```
