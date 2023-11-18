@@ -1,9 +1,9 @@
 ---
-title: tmux
-date: 2023-03-06 23:49:50
+title: Tmux
+date: 2023-11-17 14:14:12
 tags:
 ---
-# termial multiplexer
+# Terminal Multiplexer
 
 ## custom config
 
