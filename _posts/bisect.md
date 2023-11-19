@@ -2,7 +2,7 @@
 title: bisect
 date: 2021-06-24 22:15:00
 tags:
-  - CLRS
+  - gist
 ---
 
 
@@ -34,7 +34,6 @@ def bisect_right(nums, target):
 ```python
 def bisect_left(a, x, lo=0, hi=None):
     """返回x插入a后所在位置的index（如果a中存在与x等值的元素，则插入到左侧）"""
-    
     if lo < 0:
         raise ValueError('lo must be non-negative')
     if hi is None:
@@ -49,7 +48,6 @@ def bisect_left(a, x, lo=0, hi=None):
 ```python
 def bisect_right(a, x, lo=0, hi=None):
     """返回x插入a后所在位置的index（如果a中存在与x等值的元素，则插入到右侧）"""
-
     if lo < 0:
         raise ValueError('lo must be non-negative')
     if hi is None:
