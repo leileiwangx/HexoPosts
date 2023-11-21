@@ -1,8 +1,8 @@
 ---
-title: preSum
+title: presum
 date: 2021-06-02 11:10:15
 tags:
-  - preSum
+  - presum
 ---
 
         preSum = [0] + nums
@@ -54,6 +54,9 @@ Extend : the number of continuous subarray sum:
             if nex  in modDict:
                 res += modDict[nex]
         return res
+
+
+
 
 
 
