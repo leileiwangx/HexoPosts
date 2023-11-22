@@ -2,7 +2,7 @@
 title: heap sort
 date: 2021-06-08 14:23:01
 tags:
-  - CLRS
+  - sort
 ---
 
 ```python

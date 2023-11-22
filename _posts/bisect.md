@@ -2,7 +2,7 @@
 title: bisect
 date: 2021-06-24 22:15:00
 tags:
-  - gist
+  - bisect
 ---
 
 
