@@ -2,7 +2,7 @@
 title: bit manipulation
 date: 2021-06-08 22:56:05
 tags:
-  - bit manipulation
+  - bit
 ---
 
 ## Tips:

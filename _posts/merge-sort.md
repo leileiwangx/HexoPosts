@@ -2,7 +2,7 @@
 title: merge sort
 date: 2021-06-23 10:46:47
 tags:
-  - CLRS
+  - sort
 ---
 
 ```python
