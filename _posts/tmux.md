@@ -2,7 +2,7 @@
 title: Tmux
 date: 2023-11-17 14:14:12
 tags:
-    - 
+    - tools
 ---
 # Terminal Multiplexer
 
