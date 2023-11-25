@@ -7,7 +7,6 @@ tags:
 # Terminal Multiplexer
 
 ## custom config
-
 ```
 # set the base index for windows to 1 instead of 0
 set -g base-index 1
@@ -63,8 +62,6 @@ setw -g mode-keys vi
 
 # log output to a text file on demand
 bind P pipe-pane -o "cat >>~/#W.log" \; display "Toggled logging to ~/#W.log"
-
-
 ```
 
 

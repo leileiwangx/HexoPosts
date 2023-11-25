@@ -9,14 +9,8 @@ tags:
 ```python
 a = 5; b = 6; c = 7
 ```
-### 万物皆对象
-对象模型的一致性。
-即使是函数也能被当做其他对象那样处理。
+
 ### 函数调用和对象方法调用
-函数的调用需要用到圆括号以及 0 个或多个参数：
-```python
-result = f(x, y, z)
-```
 几乎所有的 Python 对象都有一些附属函数（方法），可以访问该对象的内部数据：
 ```python
 obj.some_method(x, y, z)
@@ -62,14 +56,7 @@ if not isinstance(x, list) and isiterable(x):
     x = list(x)
 ```
 
-通过 **as 关键字**，可以引入不同的变量名（定义别名）：
-```python
-import some_module as sm
-from some_module import PI as pi, g as gf
 
-r1 = sm.f(pi)
-r2 = gf(6, pi)
-```
 ### 二元运算符和比较运算符
 判断两个引用是否指向同一对象，可以使用 is 关键字。
 ```python
@@ -119,15 +106,6 @@ cval * (1 - 2j)
 ### 字符串
 编写字符串时，既可以用单引号（'）也可以用双引号（''）。
 对于带有换行符的多行字符串，可以使用三重引号。 
-Python 字符串是**不可变**的，要修改字符串就只能创建一个新的。
-许多对象都可以用 str 函数转换为字符串：
-```python
-a = 5.6
-s = str(a)
-s
-
->>> '5.6'
-```
 字符串其实是一串**字符序列**，可以被当作某种序列类型进行处理：
 ```python
 s = 'python'
