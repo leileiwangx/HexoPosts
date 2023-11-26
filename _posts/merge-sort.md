@@ -48,7 +48,7 @@ print(nums)
 ```
 
 ```python
-def mergeSort(nums):
+def merge_sort(nums):
     n = len(nums)
     dst = nums[:]
     length = 1
