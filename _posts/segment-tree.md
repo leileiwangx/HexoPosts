@@ -35,7 +35,7 @@ class NumArray:
             self.tree[i // 2] = self.tree[left] + self.tree[right]
             i //= 2
 
-    def  sumRange(self, i, j):
+    def  sum_range(self, i, j):
         n = len(self.tree) // 2
         i += n
         j += n
@@ -53,9 +53,9 @@ class NumArray:
 
 nums = [1, 3, 5, 7, 9]
 rangeSum = NumArray(nums)
-print(rangeSum.sumRange(2, 3))
+print(rangeSum.sum_range(2, 3))
 rangeSum.update(1, 6)
-print(rangeSum.sumRange(1, 3))
+print(rangeSum.sum_range(1, 3))
 ```
 
 因为我们在 for 循环的每次迭代中计算一个节点的和。而一个线段树中大约有 2n 个节点。
