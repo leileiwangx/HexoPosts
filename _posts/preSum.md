@@ -5,9 +5,11 @@ tags:
   - presum
 ---
 
-        preSum = [0] + nums
-        for i in range(1, len(preSum)):
-            preSum[i] = preSum[i-1] + preSum[i]
+```
+preSum = [0] + nums
+for i in range(1, len(preSum)):
+    preSum[i] = preSum[i-1] + preSum[i]
+```
 
 ## Continuous Subarray Sum
 Given an integer array nums and an integer k, return true if nums has a continuous subarray of size at least two whose elements sum up to a multiple of k, or false otherwise.
