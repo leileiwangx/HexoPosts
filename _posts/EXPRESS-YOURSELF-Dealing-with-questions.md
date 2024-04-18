@@ -15,12 +15,12 @@ If you give a talk, for example at a conference, you need to explain to the audi
 我们留出最后 15 分钟作为提问时间。
 - If you have questions, please feel free to ask them as we go along. 
 如果大家有问题，请在我们进行的过程中随时提问。
-- That’s an interesting point. Perhaps I can answer it like this… 
-这是个有趣的问题，也许我可以这样回答
+- That’s an interesting point. Perhaps I can answer it like this...
+这是个有趣的问题，也许我可以这样回答...
 - I’m not sure I understand your question. 
 我不太肯定是否明白你的问题。
-- If I understand your question correctly, what you’re asking is… 
-如果我没理解错的话，你的问题是
+- If I understand your question correctly, what you’re asking is...
+如果我没理解错的话，你的问题是...
 - That’s something we probably need to look into further. 
 这很可能是需要我们进一步调查的事情。
 - Does that answer your question? 
@@ -28,4 +28,4 @@ If you give a talk, for example at a conference, you need to explain to the audi
 - I hope that answers your question. 
 我希望这能回答你的问题。
 - Can I come back to that point later? 
-我稍后再来谈这个问题好吗？
+我稍后再来谈这个问题好吗?
